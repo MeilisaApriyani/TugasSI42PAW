@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan - PT Catur Putra Manggala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f8ff;
+        }
+
+        .form-container {
+            max-width: 650px;
+            margin: 60px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #001A72;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control, .form-select {
+            border-radius: 12px;
+        }
+
+        .btn-primary {
+            background-color: #001A72;
+            border-color: #001A72;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0032b4;
+            border-color: #0032b4;
+        }
+
+        .form-text {
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="text-center">Form Pemesanan Layanan</h2>
+        <form action="thankyou.html" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required placeholder="+62...">
+            </div>
+            <div class="mb-3">
+                <label for="service" class="form-label">Layanan yang Dipesan</label>
+                <select class="form-select" id="service" name="service" required>
+                    <option value="">-- Pilih Layanan --</option>
+                    <option value="pagar-panel-beton">Pemasangan Pagar Panel Beton</option>
+                    <option value="box-culvert">Penyediaan Box Culvert</option>
+                    <option value="tanah-pasir">Timbunan Tanah dan Pasir Kasar</option>
+                    <option value="batu-split">Penyediaan Batu Split dan Batu Belah</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan atau Permintaan Khusus</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tulis permintaan khusus di sini..."></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Kirim Pemesanan</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
